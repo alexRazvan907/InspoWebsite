@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;   
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    flex: 1;
+}
+.navbar-nav li{
+    margin-right: 30px;
+    font-size: 18px;
+}
+.nav-link {
+    color: rgba(0,0,0,.5);
+}
+.navbar {
+    justify-content: center;
+}
+.inspo {
+    font-size: 37px;
+    margin-left: 3%;
+}
+footer img{
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    width: 74px;
+    height: 79px;
+}
+
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+.column1 img {
+    height: 320px;
+    width: 281px !important;
+}
+  /* Clearfix (clear floats) */
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row1 {
+    width: 73%;
+    margin: auto;
+    min-height: 51vh;
+    align-items: center;
+    color: rgba(0,0,0,.5);
+  }
+
+  .categories {
+      text-align: left;
+      font-size: 23px;
+      text-decoration: none;
+  }
+  .text1 {
+      text-align: center;
+  }
+
+  #mainPage {
+    color: rgba(0,0,0,.5);
+    margin-left: 20px;
+  }
+  #mainPage2 {
+      margin-top: 130px;
+  }
+   
+  /* arrows */
+
+  .arrow{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 70px;
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .row1 {      
+        display: flex;
+        flex-direction: column;
+        margin-left: -68px;
+    }
+    .arrow {
+        margin-top: 50px;
+    }
+    footer img {
+        display: none;
+    }
+}
+
+a:hover {
+    color: black;
+}
+
+.btn-primary {
+    border: 1px solid lightgray;
+    padding: 15px 2px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-left: 43%;
+}
+.btn-primary:hover {
+    background-color: black;
+    color: white;
+}

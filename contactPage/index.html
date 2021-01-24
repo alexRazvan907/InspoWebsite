@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <a class="navbar-brand" href="../index.html">
+        <span class="navbar-text inspo">INSPO</span>
+        </a>
+
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-info btn-lg dropdown-toggle" type="button" id="btnDropdownDemo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: black;">
+                  <i class="fas fa-user"></i>
+                </button>
+                <form class="dropdown-menu p-4" style="width: 250px;">
+                <div class="form-group">
+                  <label for="emailDropdown">Email address</label>
+                  <input type="email" class="form-control" id="emailDropdown" placeholder="abc@test.com">
+                </div>
+                <div class="form-group">
+                  <label for="passwordDropdown">Password</label>
+                  <input type="password" class="form-control" id="passwordDropdown" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="rememDemo">
+                  <label class="form-check-label" for="rememDemo">
+                    Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Log in</button>
+                <p>
+                  New user? Create an account <a href="/userPage/index.html">here!</a>
+                </p>
+              </form>
+              </div>
+          
+
+            </li>
+            <li class="nav-item cart">
+              <a class="nav-link"  href="/cartSite/index.html">
+                  <i class="fas fa-shopping-cart"></i><span>0</span>
+              </a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contactPage/index.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../uploadPage/index.html">Your idea</a>
+          </li>
+        </ul>
+    </div>
+        </nav>
+        <section class="mainPage">
+        <div class="container">
+          <div class="header">
+              <h2>Leave a comment
+              </h2>
+              <p>Do you have a outfit that we missed? upload it <a href="../uploadPage/index.html">here.</a></p>
+          </div>
+      <form class="form" id="form">
+      <div class="form-contact">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Alex Razvan">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+      </div>
+  
+      <div class="form-contact">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="emailaddress@email.com">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+      </div>
+  
+      <div class="form-contact">
+          <label for="comment">Comment</label>
+          <input id="comment" type="text" placeholder="Max length 500 characters">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+      </div>
+      <button>Submit</button>
+    </section>
+
+
+    <script src="java.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

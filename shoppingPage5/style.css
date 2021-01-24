@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;   
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    flex: 1;
+}
+.navbar-nav li{
+    margin-right: 30px;
+    font-size: 18px;
+}
+.nav-link {
+    color: rgba(0,0,0,.5);
+}
+.navbar {
+    justify-content: center;
+}
+.inspo {
+    font-size: 37px;
+    margin-left: 3%;
+}
+.categories {
+    text-align: left;
+    font-size: 23px;
+    text-decoration: none;
+}
+#mainPage {
+    color: rgba(0,0,0,.5);
+    margin-left: 20px;
+  }
+footer img{
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    width: 74px;
+    height: 79px;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    height: 484px;
+    margin-left: 52px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .origAlt {
+    height: 479px;
+    width: 47%;
+    float: left;
+    margin-right: 35px;
+  }
+  /* header for original and budger */
+  .headOrigAlt {
+      color: #78bfd8;
+      text-align: center;
+  }
+
+  .button{
+    border: 1px solid wheat;
+    padding: 15px 2px;
+    text-align: center;
+    text-decoration: none;
+    width: 270px;
+    font-size: 20px;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      margin-left: 17px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 274px;
+    }
+    .origAlt {
+      height: 240px;
+    }
+  }
